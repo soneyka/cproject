@@ -1,0 +1,38 @@
+.userFeed{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+
+}
+
+.userFeed::-webkit-scrollbar {
+    display: none;
+}
+  
+.userFeed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.userFeed__header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.userFeed__header > h2{
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.userFeed__header > p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+    cursor: pointer;
+}
